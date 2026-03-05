@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color:whitesmoke;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+}
+
+.game-board {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px auto;
+    padding: 30px;
+    border: 1px solid grey;
+    border-radius: 8px;
+    width: fit-content;
+    background-color: white;
+}
+
+
+.choice, .computer-choice {
+    border: 3px solid transparent;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.choice img, .computer-choice img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+.choice p, .computer-choice p {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.selected-player {
+    border-color: red;
+    background-color: #fff9f9;
+}
+
+.selected-computer {
+    border-color: blue;
+    background-color: #f4faff;
+    cursor: not-allowed;
+}
+
+
+#outcome-section {
+    margin-top: 30px;
+    padding: 20px 40px;
+    border: 1px solid grey;
+    border-radius: 8px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+#score-section {
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #999;
+    border-radius: 4px;
+    background-color: white;
+    transition: background-color 0.2s;
+}
+
+button:hover:not(:disabled) {
+    background-color: #e2e2e2;
+}
+
+button:disabled {
+    background-color:gainsboro;
+    cursor: not-allowed;
+}
